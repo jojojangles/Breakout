@@ -3,6 +3,8 @@ using System.Collections;
 
 public class core : MonoBehaviour {
 	public GameObject blockPrefab;
+	public static int score = 0;
+	public static int lives = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +14,12 @@ public class core : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnGUI(){
+		GUI.color = Color.yellow;
+		GUI.Label(new Rect(25,10,100,50), "Score: " + score);
+		GUI.Label(new Rect(700,10,100,50), "Lives: " + lives);
 	}
 
 	void blockMaker()

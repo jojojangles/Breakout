@@ -7,6 +7,8 @@ public class ball : MonoBehaviour {
 	public AudioClip brickBreak;
 	public AudioClip wallBounce;
 	public GameObject brick;
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -15,12 +17,18 @@ public class ball : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(transform.position.y < -22){ //ball death
+			core.lives --;
+
 			transform.position = GameObject.FindGameObjectWithTag("paddle").transform.position + new Vector3(0,1,0);
-			theBall.rigidbody.Sleep ();
+			theBall.rigidbody.Sleep();
 
 			//put a ball back on the paddle after death
 			paddle p = GameObject.FindGameObjectWithTag("paddle").GetComponent("paddle") as paddle;
 			p.prelaunchBall = gameObject;
+		}
+
+		if(core.lives < 0){
+			Application.LoadLevel("GameOver");
 		}
 	}
 
@@ -31,7 +39,8 @@ public class ball : MonoBehaviour {
 
 		if(colson.gameObject.tag == "block"){ //break a block
 			audio.PlayOneShot (brickBreak, 0.5f);
-
+			core.score++;
+			Destroy(colson.gameObject);
 		}
 	}
 }

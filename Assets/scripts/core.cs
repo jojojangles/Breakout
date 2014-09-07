@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class core : MonoBehaviour {
-	public GameObject block;
+	public GameObject blockPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class core : MonoBehaviour {
 	{
 		for(int i = -5; i < 6; i++)
 		{
-			Instantiate(block,new Vector3(i*5,10,0),Quaternion.identity);
+			Instantiate(blockPrefab,new Vector3(i*5,10,0),Quaternion.identity);
 		}
 	}
 }

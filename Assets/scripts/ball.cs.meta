@@ -4,8 +4,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - theBall: {fileID: 100000, guid: 8c8c223a5f406124bb220e14dfe4575a, type: 2}
-  - brickBreak: {instanceID: 0}
-  - wallBounce: {instanceID: 0}
+  - brickBreak: {fileID: 8300000, guid: 581cfcf717b8c2e48b247653b09e9f0b, type: 3}
+  - wallBounce: {fileID: 8300000, guid: 148c1f19262745e4eb796bd2f208bdf5, type: 3}
   - brick: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

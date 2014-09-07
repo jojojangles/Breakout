@@ -25,8 +25,13 @@ public class ball : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision colson){
-		if(colson.gameObject.tag == "wall"){
+		if(colson.gameObject.tag == "wall"){ //bounce off wall
 			audio.PlayOneShot(wallBounce, 0.5f);
+		}
+
+		if(colson.gameObject.tag == "block"){ //break a block
+			audio.PlayOneShot (brickBreak, 0.5f);
+
 		}
 	}
 }

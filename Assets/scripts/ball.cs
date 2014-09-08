@@ -30,6 +30,10 @@ public class ball : MonoBehaviour {
 		if(core.lives < 0){
 			Application.LoadLevel("GameOver");
 		}
+
+		if(GameObject.FindGameObjectsWithTag("block").Length < 1){
+			Application.LoadLevel("Victory");
+		}
 	}
 
 	void OnCollisionEnter(Collision colson){

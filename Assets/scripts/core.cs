@@ -33,6 +33,7 @@ public class core : MonoBehaviour {
 		GUI.color = Color.yellow;
 		GUI.Label(new Rect(25,10,100,50), "Score: " + score);
 		GUI.Label(new Rect(700,10,100,50), "Lives: " + lives);
+		GUI.Label (new Rect(275,10,250,50), "Press G for Over-the-Shoulder mode!");
 	}
 
 	void blockMaker()

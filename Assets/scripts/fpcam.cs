@@ -12,6 +12,6 @@ public class fpcam : MonoBehaviour {
 	void Update () {
 		Vector3 padloc = GameObject.FindGameObjectWithTag("paddle").transform.position;
 		Vector3 camloc = transform.position;
-		transform.position = new Vector3(padloc.x,-33,-6);
+		transform.position = new Vector3(padloc.x,camloc.y,camloc.z);
 	}
 }

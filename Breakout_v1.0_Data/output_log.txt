@@ -1,0 +1,28 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     1985 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Users\Joey\Documents\Breakout\Breakout_v1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Users\Joey\Documents\Breakout\Breakout_v1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Users\Joey\Documents\Breakout\Breakout_v1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Users\Joey\Documents\Breakout\Breakout_v1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.030 seconds
+desktop: 1920x1080 60Hz; virtual: 3280x1080 at -1360,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.191302 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 132.
+Total: 0.306084 ms (FindLiveObjects: 0.005724 ms CreateObjectMapping: 0.005121 ms MarkObjects: 0.041875 ms  DeleteObjects: 0.010544 ms)
+
+UnloadTime: 0.265714 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 91.
+Total: 0.398572 ms (FindLiveObjects: 0.003916 ms CreateObjectMapping: 0.005422 ms MarkObjects: 0.060554 ms  DeleteObjects: 0.090981 ms)
+
